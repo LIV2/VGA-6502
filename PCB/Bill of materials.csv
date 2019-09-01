@@ -1,0 +1,21 @@
+Comment,Description,Designator,Quantity
+,,,
+0.1uF,"Multilayer Ceramic Capacitor, Gold Max, C320 Series, 0.1 - F, - 10%, X7R, 50 V, Radial Leaded","C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C19, C20",12
+0.1uF,0603 0.1uF Capacitor,"C11, C12, C13, C14, C15, C16, C17, C18",8
+FCI ICD15S13E6GV00LF,Conn High Density D-Sub SKT 15 POS 2.28mm Solder RA Thru-Hole 15 Terminal 1 Port,CON1,1
+1N5818,DO-41 diode vertically mounted,"D1, D2, D3",3
+750,Generic through-hole resistor vertically mounted,"R1, R2, R3",3
+1k5,"1k5, Generic through-hole resistor vertically mounted, Generic through-hole resistor vertically mounted","R4, R5, R6",3
+1k,1k,R7,1
+10k,Generic through-hole resistor vertically mounted,R8,1
+IDT7134LA20JG,4K x 8 DUAL-PORT STATIC SRAM,"U1, U4",2
+74AC377,Flip Flop D-Type Bus Interface Pos-Edge 1-Element Automotive 20-Pin SOIC W Tube,"U2, U6",2
+74HC157N,Logic IC - Multiplexer Texas Instruments SN74HC157N Multiplexer Single supply PDIP 16,U3,1
+AT28C64B,AT28C64B Series 64 KB (8 K x 8) 5.5 V High-Performance Parallel EEPROM - DIP-28,U5,1
+OSC,Oscillator XO 5MHz ??50ppm 50pF (Stability) HCMOS/TTL 55% 5V 4-Pin Metal DIP Thru-Hole Tray,U7,1
+EPM7128SLC84-15N,CPLD MAX 7000 Family 2.5K Gates 128 Macro Cells 76.9MHz 5V 84-Pin PLCC,U8,1
+74AC00N,"Semiconductors and Actives, Logic Gates, Single, Logic, Standard",U9,1
+74HC688N,8-Bit Identity/Magnitude Comparators (P=Q) with Enable 20-PDIP -40 to 85,U10,1
+74HC85N,Magnitude Comparator 4-Bit Non-Inverting 16-Pin PDIP Tube,U11,1
+74AC86E,XOR Gate 4-Element 2-IN CMOS 14-Pin PDIP Tube,U12,1
+74AC166,Shift Register Single 8-Bit Serial/Parallel to Serial 16-Pin PDIP Bulk,U13,1
