@@ -40,7 +40,7 @@ Example: "Hello world!" with a green foreground and black background would be st
 'H'|$0A|'e'|$0A|'l'|$0A|'l'|$0A|'o'|$0A|' '|$0A|'w'|$0A|'o'|$0A|'r'|$0A|'l'|$0A|'d'|$0A|'!'|$0A|
 
 ## Registers  
-**All registers are currently read-only as I did not have enough space in the CPLD to allow reading from the registers.**  
+**All registers are currently write-only as I did not have enough space in the CPLD to allow reading from the registers.**  
 $DF00: Register Pointer  
 $DF01: Register set by Register pointer  
 
@@ -52,12 +52,12 @@ $DF01: Register set by Register pointer
 |$03|Cursor location (Low byte)|
 |$04|Cursor location (High byte)|
 
-### Register pointer (read only)
+### Register pointer (write only)
 To access a register you first need to write the register address to the register pointer (default: $DF00), then read/write the register at (default: $DF01)
 
-### Memory Start address (read only)
+### Memory Start address (write only)
 This register pair forms a 16-bit memory address defining the start of the visual screen, i.e at the start of each frame the VGA controller begins reading characters from here
-### Control Register (read only)
+### Control Register (write only)
 The control register configures various settings for the VGA controller 
 
 
@@ -75,5 +75,5 @@ The control register configures various settings for the VGA controller
 **Mode**: Mode 0: 640x480, Mode 1: 640x400  (mode 1 will select the 8x8 fonts from the CGROM)  
 **Character Height**: Character height, Default: 0xF (16 pixels)
 
-### Cursor location (read only)
+### Cursor location (write only)
 This register pair forms a 16-bit address defining where the cursor should be displayed
