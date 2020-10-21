@@ -132,7 +132,7 @@ begin
     if LATCH = '0' then
 	   FF_CURSOR <= M_CURSOR;
 		FF_BLANK <= VIDEN;
-		FF_VSYNC <= M_VSYNC;
+		FF_VSYNC <= M_VSYNC XOR REG_MODE; /* Positive VSYNC for 640x400 mode */
 		FF_HSYNC <= M_HSYNC;
 	 else
 	   FF_CURSOR <= FF_CURSOR;
@@ -278,9 +278,9 @@ process(H_END)
 begin
     if falling_edge(H_END) then
         if (V_CNTR < V_SW) then
-            M_VSYNC <= '1';
-        else
             M_VSYNC <= '0';
+        else
+            M_VSYNC <= '1';
         end if;
     end if;
 end process;
